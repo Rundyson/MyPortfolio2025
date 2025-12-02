@@ -6,7 +6,7 @@ const Home = ({ id }) => {
   return (
     <section
       id={id}
-      className="bg-lightGray dark:bg-matteBlack transition-colors duration-500 text-black dark:text-white"
+      className="bg-lightGray dark:bg-matteBlack transition-colors duration-500 text-black dark:text-white md:pt-24 sm:pt-28"
     >
       <div className="container flex gap-5">
         <div className="left w-1/2 center-all">

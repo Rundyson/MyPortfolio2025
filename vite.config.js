@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '', // <-- THIS IS THE IMPORTANT PART
+  base: '/', // <-- THIS IS THE IMPORTANT PART
   plugins: [react()],
   server: {
     host: true,
