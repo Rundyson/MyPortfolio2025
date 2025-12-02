@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full;
+  }
+  body {
+    @apply font-dmmono font-light leading-relaxed ;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-5xl mb-5;
+  }
+
+  h2 {
+    @apply text-3xl mb-5;
+  }
+
+  h3 {
+    @apply text-2xl mb-5;
+  }
+
+  h4 {
+    @apply text-xl mb-5;
+  }
+
+  h5 {
+    @apply text-lg mb-5;
+  }
+
+  img {
+    @apply block;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto;
+  }
+.btn {
+  @apply p-2 border border-transparent flex gap-1 rounded-2xl transition-all items-center;
+}
+
+.btn:disabled {
+  @apply pointer-events-none opacity-50;
+}
+
+/* Call button */
+.btn-call {
+  @apply bg-matteBlack text-white border-black hover:bg-transparent hover:text-black dark:bg-white dark:text-black dark:border-white dark:hover:text-black animate-pulse transition-colors;
+}
+
+
+/* Tooltip base */
+.tooltip {
+  @apply relative p-2 rounded-md transition-all hover:bg-transparent hover:text-white cursor-pointer;
+}
+
+/* Tooltip content */
+.tooltip::before {
+  @apply content-[attr(data-tooltip)] absolute top-full left-1/2 -translate-x-1/2 mt-2 p-1.5 bg-black bg-opacity-80 px-2.5 text-[10px] rounded-md text-white leading-none opacity-0 pointer-events-none transition-all z-30 dark:bg-white dark:text-black;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+  @apply content-[''] absolute top-full left-1/2 -translate-x-1/2 mt-[2px] w-0 h-0 border-l-[3px] border-r-[3px] border-t-[3px] border-l-transparent border-r-transparent border-t-black opacity-0 transition-all dark:border-t-white;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::before,
+.tooltip:hover::after {
+  @apply opacity-100;
+}
+  .socials li {
+    @apply hover:animate-pulse rounded-md  ;
+  }
+  .socials li img {
+    @apply md:max-w-[40px] sm:max-w-[20px] sm:mt-0 md:mt-10;
+  }
+  .SideSocials img {
+    @apply max-w-[50px];
+  }
+}
+@layer utilities {
+  .center-all {
+    @apply flex justify-center items-center;
+  }
+}

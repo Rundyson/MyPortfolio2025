@@ -1,0 +1,54 @@
+import React from 'react'
+import { ExternalLink, Github } from 'lucide-react'
+
+const ProjectCard = ({ title, description, tech, demoLink, repoLink, image }) => {
+  return (
+    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+      <img
+        src={image}
+        alt={title}
+        className="w-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+
+      <div className="absolute inset-0 bg-black/30"></div>
+
+      <div className="absolute inset-0 p-5 flex flex-col justify-end text-white ">
+        <h2 className="text-xl font-semibold md:block sm:hidden">{title}</h2>
+        <p className="text-sm opacity-90 mt-1 md:block sm:hidden">{description}</p>
+
+        <div className="flex flex-wrap gap-2 mt-3">
+          {tech.map((item, i) => (
+            <span
+              key={i}
+              className="text-xs px-3 py-1 rounded-full bg-white/20 border border-white/30"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex gap-3 mt-5">
+          <a
+            href={demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl font-medium bg-white/20 text-white"
+          >
+            <ExternalLink size={18} /> Demo
+          </a>
+
+          <a
+            href={repoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl font-medium border border-white text-white"
+          >
+            <Github size={18} /> Code
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default ProjectCard
