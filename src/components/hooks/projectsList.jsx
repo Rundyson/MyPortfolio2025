@@ -21,7 +21,7 @@ export const projects = [
   {
     title: 'Marci Metzger Housing',
     description:
-      'Recreated a real estate website to practice responsive layout, React components, and Tailwind CSS styling.',
+      'Recreated a real estate website to practice layout, React components, and Tailwind CSS styling.',
     tech: ['Tailwind', 'React', 'Vite'],
     demoLink: 'https://marci-one.vercel.app/',
     repoLink: 'https://github.com/Rundyson/marci.git',
@@ -41,7 +41,7 @@ export const projects = [
     description:
       'Built a responsive furniture e-commerce website to practice layout, UI design, and interactivity using HTML, CSS, and JavaScript.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    demoLink: '',
+    demoLink: 'https://insight-psi-three.vercel.app/',
     repoLink: 'https://github.com/Rundyson/Insight.git',
     image: '/images/p4.png',
   },
@@ -50,7 +50,7 @@ export const projects = [
     description:
       'Built a responsive ramen website to practice layoutand UI design using HTML, Tailwind, and JavaScript.',
     tech: ['HTML', 'Tailwind', 'JavaScript'],
-    demoLink: '',
+    demoLink: 'https://ramenv2.vercel.app/',
     repoLink: 'https://github.com/Rundyson/ramen.git',
     image: '/images/p16.png',
   },
@@ -59,7 +59,7 @@ export const projects = [
     description:
       'Built a responsive landing page inspired by a Pinterest design to practice layout, interactivity, and UI design.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    demoLink: '',
+    demoLink: 'https://lombok-vert.vercel.app/',
     repoLink: 'https://github.com/Rundyson/Lombok.git',
     image: '/images/p2.png',
   },
@@ -68,7 +68,7 @@ export const projects = [
     description:
       'Developed a recipe website to practice structured HTML, CSS styling, and responsive design principles.',
     tech: ['HTML', 'CSS'],
-    demoLink: '',
+    demoLink: 'https://recipe-gilt-five.vercel.app/',
     repoLink: 'https://github.com/Rundyson/viter-recipe.git',
     image: '/images/p3.png',
   },
@@ -78,7 +78,7 @@ export const projects = [
     description:
       'Built a pizza ordering landing page to practice Tailwind CSS styling, JavaScript interactions, and responsive layout.',
     tech: ['HTML', 'Tailwind', 'JavaScript'],
-    demoLink: '',
+    demoLink: 'https://getpizza.vercel.app/',
     repoLink: 'https://github.com/Rundyson/get-pizza.git',
     image: '/images/p5.png',
   },
