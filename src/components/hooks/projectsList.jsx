@@ -1,4 +1,3 @@
-// projectsData.js
 export const projects = [
   {
     title: 'Netflix Clone',
@@ -26,6 +25,15 @@ export const projects = [
     demoLink: 'https://marci-one.vercel.app/',
     repoLink: 'https://github.com/Rundyson/marci.git',
     image: '/images/p13.png',
+  },
+  {
+    title: 'Recipe v2',
+    description:
+      'Recipe version two to practice layout, React components, and Tailwind CSS styling.',
+    tech: ['Tailwind', 'React', 'Vite'],
+    demoLink: 'https://recipev2-inky.vercel.app/',
+    repoLink: 'https://github.com/Rundyson/recipev2.git',
+    image: '/images/p17.png',
   },
   {
     title: 'Starbucks Web Page',
@@ -69,7 +77,7 @@ export const projects = [
       'Developed a recipe website to practice structured HTML, CSS styling, and responsive design principles.',
     tech: ['HTML', 'CSS'],
     demoLink: 'https://recipe-gilt-five.vercel.app/',
-    repoLink: 'https://github.com/Rundyson/Recipe.git',
+    repoLink: 'https://github.com/Rundyson/viter-recipe.git',
     image: '/images/p3.png',
   },
 
@@ -135,7 +143,7 @@ export const figma = [
     Fdescription: 'Figma sample',
     Ftech: ['Figma'],
     FdemoLink:
-      'https://www.figma.com/proto/JDxZeux8vTbWyvvZrue4pB/Baful-Web-Design?node-id=3-45&starting-point-node-id=3%3A45&t=dGEWRWCC0EmZB22W-1',
+      'https://www.figma.com/proto/JDxZeux8vTbWyvvZrue4pB/Baful-Web-Design?node-id=3-45&starting-point-node-id=3%3A45&t=UN1gqfNg2gzBLXdh-1',
     Fimage: '/images/p15.png',
   },
   {
