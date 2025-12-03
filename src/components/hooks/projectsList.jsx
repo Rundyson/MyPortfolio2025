@@ -69,7 +69,7 @@ export const projects = [
       'Developed a recipe website to practice structured HTML, CSS styling, and responsive design principles.',
     tech: ['HTML', 'CSS'],
     demoLink: 'https://recipe-gilt-five.vercel.app/',
-    repoLink: 'https://github.com/Rundyson/viter-recipe.git',
+    repoLink: 'https://github.com/Rundyson/Recipe.git',
     image: '/images/p3.png',
   },
 
