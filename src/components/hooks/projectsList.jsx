@@ -3,9 +3,9 @@ export const projects = [
   {
     title: 'Netflix Clone',
     description:
-      'Recreated the Netflix homepage to practice component-based design, responsive layout, and Tailwind CSS styling.',
+      'Recreated the Netflix homepage to practice component-based design, dekstop layout only, and Tailwind CSS styling.',
     tech: ['Tailwind', 'React', 'Vite'],
-    demoLink: '',
+    demoLink: 'https://netflix-rho-rose.vercel.app/',
     repoLink: 'https://github.com/Rundyson/viter-netplex.git',
     image: '/images/p11.png',
   },
@@ -14,7 +14,7 @@ export const projects = [
     description:
       'Built a modern web interface inspired by e-commerce layouts to practice React components and Tailwind CSS styling.',
     tech: ['Tailwind', 'React', 'Vite'],
-    demoLink: '',
+    demoLink: 'https://zenorobev2.vercel.app/',
     repoLink: 'https://github.com/Rundyson/zenorobev2.git',
     image: '/images/p8.png',
   },
@@ -23,7 +23,7 @@ export const projects = [
     description:
       'Recreated a real estate website to practice responsive layout, React components, and Tailwind CSS styling.',
     tech: ['Tailwind', 'React', 'Vite'],
-    demoLink: '',
+    demoLink: 'https://marci-one.vercel.app/',
     repoLink: 'https://github.com/Rundyson/marci.git',
     image: '/images/p13.png',
   },
@@ -32,7 +32,7 @@ export const projects = [
     description:
       'Recreated the Netflix homepage to practice component-based design, responsive layout, and Tailwind CSS styling.',
     tech: ['React', 'Tailwind', 'Vite'],
-    demoLink: '',
+    demoLink: 'https://starbucks-brown-seven.vercel.app/',
     repoLink: 'https://github.com/Rundyson/starbucks.git',
     image: '/images/p1.png',
   },
@@ -87,7 +87,7 @@ export const projects = [
     description:
       'Created a travel website design to practice SASS styling, responsive layouts, and reusable CSS components.',
     tech: ['HTML', 'SASS'],
-    demoLink: '',
+    demoLink: 'https://travelbee-sable.vercel.app/',
     repoLink: 'https://github.com/Rundyson/TravelBee.git',
     image: '/images/p6.png',
   },
@@ -96,7 +96,7 @@ export const projects = [
     description:
       'Developed a e-commerce interface to practice React state management, Tailwind CSS utilities, and responsive layouts.',
     tech: ['Tailwind', 'React', 'Vite'],
-    demoLink: '',
+    demoLink: 'https://viter-ecom.vercel.app/',
     repoLink: 'https://github.com/Rundyson/ecomm.git',
     image: '/images/p7.png',
   },
@@ -106,7 +106,7 @@ export const projects = [
     description:
       'Developed a recipe and food website to practice interactivity with JavaScript and responsive design using HTML and CSS.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    demoLink: '',
+    demoLink: 'https://decilicious.vercel.app/',
     repoLink: 'https://github.com/Rundyson/Decilicious.git',
     image: '/images/p9.png',
   },
@@ -116,7 +116,7 @@ export const projects = [
     description:
       'Developed a responsive grid-based layout to practice CSS positioning, spacing, and modern web design patterns.',
     tech: ['HTML', 'CSS'],
-    demoLink: '',
+    demoLink: 'https://grid-eight-ruddy.vercel.app/',
     repoLink: 'https://github.com/Rundyson/GRID.git',
     image: '/images/p10.png',
   },
