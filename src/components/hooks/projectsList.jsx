@@ -107,7 +107,7 @@ export const projects = [
     tech: ['HTML', 'SASS'],
     demoLink: 'https://nev-chi.vercel.app/',
     repoLink: 'https://github.com/Rundyson/nev2.git',
-    image: '/images/p1.png',
+    image: '/images/p18.png',
   },
   {
     title: 'E-commerce Store',
