@@ -135,7 +135,7 @@ export const figma = [
     Fdescription: 'Figma sample',
     Ftech: ['Figma'],
     FdemoLink:
-      'https://www.figma.com/proto/JDxZeux8vTbWyvvZrue4pB/Baful-Web-Design?node-id=3-45&starting-point-node-id=3%3A45&t=UN1gqfNg2gzBLXdh-1',
+      'https://www.figma.com/proto/JDxZeux8vTbWyvvZrue4pB/Baful-Web-Design?node-id=3-45&starting-point-node-id=3%3A45&t=dGEWRWCC0EmZB22W-1',
     Fimage: '/images/p15.png',
   },
   {
