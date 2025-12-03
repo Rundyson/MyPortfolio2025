@@ -1,3 +1,4 @@
+// projectsData.js
 export const projects = [
   {
     title: 'Netflix Clone',
@@ -98,6 +99,15 @@ export const projects = [
     demoLink: 'https://travelbee-sable.vercel.app/',
     repoLink: 'https://github.com/Rundyson/TravelBee.git',
     image: '/images/p6.png',
+  },
+  {
+    title: 'NEV Website',
+    description:
+      'Created a website design to practice SASS styling, and reusable CSS components.',
+    tech: ['HTML', 'SASS'],
+    demoLink: 'https://nev-chi.vercel.app/',
+    repoLink: 'https://github.com/Rundyson/nev2.git',
+    image: '/images/p18.png',
   },
   {
     title: 'E-commerce Store',
