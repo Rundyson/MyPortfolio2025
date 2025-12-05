@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import Footer from '../FrontEndPartials/Footer'
 import SideSocials from '../../hooks/SideSocials'
 import { ArrowLeftFromLine } from 'lucide-react'
+import BackgroundVideo from '../../hooks/BackgroundVideo'
 
 const ProjectsSection = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -21,7 +22,7 @@ const ProjectsSection = () => {
   return (
     <>
       <SideSocials />
-
+<BackgroundVideo/>
       <header
       data-aos="fade-down"
       className="fixed top-0 left-0 w-full z-50 transition-all duration-300"

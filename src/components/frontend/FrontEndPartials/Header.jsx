@@ -2,14 +2,11 @@ import React, { useState, useEffect } from 'react'
 import NavBar from '../../hooks/NavBar'
 import ThemeToggle from '../../hooks/ThemeToggle'
 
-const Header = () => {
+const Header = ({ setOverlay }) => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -30,7 +27,7 @@ const Header = () => {
           }
         `}
       >
-   
+     
         <div className="flex justify-center w-full sm:w-auto sm:justify-start">
           <img
             src="/images/my-logo.png"
@@ -40,7 +37,7 @@ const Header = () => {
         </div>
 
         <div className="ml-auto flex items-center gap-4">
-          <ThemeToggle />
+          <ThemeToggle setOverlay={setOverlay} />
           <NavBar />
         </div>
       </div>

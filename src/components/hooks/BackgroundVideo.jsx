@@ -1,25 +1,24 @@
-import useTheme from "./useTheme";
+import React from "react";
 
-export default function BackgroundVideo() {
-  const { theme } = useTheme();
-  const isDark = theme === "dark";
-  const videoSrc = isDark ? "/images/bg-light.mp4" : "/images/bg-dark.mp4";
-
+export default function BackgroundVideo({ overlayColor }) {
   return (
     <>
-
+  
       <video
-        key={videoSrc} 
-        className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+        className="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
         autoPlay
         loop
         muted
         playsInline
       >
-        <source src={videoSrc} type="video/mp4" />
+        <source src="/images/bg-dark.mp4" type="video/mp4" />
       </video>
 
-
+ 
+      <div
+        className="fixed inset-0 z-[-1] transition-colors duration-500"
+        style={{ backgroundColor: overlayColor }}
+      ></div>
     </>
   );
 }

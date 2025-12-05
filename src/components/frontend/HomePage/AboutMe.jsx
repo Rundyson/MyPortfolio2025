@@ -6,7 +6,7 @@ const AboutMe = ({ id }) => {
   return (
     <section
       id={id}
-      className=" bg-lightGray dark:bg-matteBlack/20 transition-colors duration-500 text-white"
+      className="  transition-colors duration-500 text-white"
     >
       <div className="seperate md:flex md:flex-row sm:flex sm:flex-col-reverse gap-5 container ">
         <div className="left md:w-1/2 sm:w-full md:border-r-2 sm:border-r-0 sm:border-t-2 md:border-t-0 md:pr-7 sm:px-6 flex flex-col gap-10">

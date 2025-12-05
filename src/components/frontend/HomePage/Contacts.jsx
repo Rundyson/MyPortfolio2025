@@ -1,35 +1,39 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const Contacts = ({ id }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-    setFormData({ name: '', email: '', message: '' })
-  }
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    setFormData({ name: "", email: "", message: "" });
+  };
 
   return (
     <section
       id={id}
-      className="py-12 container md:w-[1000px] bg-lightGray dark:bg-matteBlack/20  dark:text-white transition-colors duration-500"
+      className="py-12 bg-lightGray dark:bg-matteBlack/20 dark:text-white transition-colors duration-500"
     >
-      <h2 className="text-3xl font-bold text-center mb-8 text-white">Message Me</h2>
-      <div className="  flex flex-col md:flex-row gap-8">
+      <h2 className="text-3xl font-bold text-center mb-8 text-white">
+        Message Me
+      </h2>
+
+      <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6 md:gap-8 overflow-hidden">
+        {/* Form */}
         <div
           className="md:w-1/2 bg-white/20 dark:bg-gray-200/10 rounded-lg shadow-md p-6"
           data-aos="fade-right"
           data-aos-duration="1500"
         >
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 ">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <input
               type="text"
               name="name"
@@ -66,27 +70,26 @@ const Contacts = ({ id }) => {
           </form>
         </div>
 
-       
+        {/* Map */}
         <div
-          className="md:w-1/2 rounded-lg overflow-hidden shadow-md"
+          className="md:w-1/2 rounded-lg overflow-hidden shadow-md min-h-[300px]"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <iframe
-            title="Location Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.066374496284!2d121.03089031531235!3d14.579639889764337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b92b2f0fdb03%3A0x6b2b63f2f5f2d29a!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
-            width="100%"
-            height="100%"
-            className="md:min-h-[400px] sm:min-h-[200px]"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div className="w-full h-full relative">
+            <iframe
+              title="Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.066374496284!2d121.03089031531235!3d14.579639889764337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b92b2f0fdb03%3A0x6b2b63f2f5f2d29a!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
+              className="absolute inset-0 w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contacts
+export default Contacts;
