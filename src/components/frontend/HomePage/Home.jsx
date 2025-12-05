@@ -6,7 +6,7 @@ const Home = ({ id }) => {
   return (
     <section
       id={id}
-      className="bg-lightGray dark:bg-matteBlack transition-colors duration-500 text-black dark:text-white md:pt-24 sm:pt-28"
+      className="  transition-colors duration-500 text-black dark:text-white md:pt-24 sm:pt-28"
     >
       <div className="container flex gap-5">
         <div className="left w-1/2 center-all">
@@ -22,14 +22,14 @@ const Home = ({ id }) => {
           <div className="details  flex flex-col items-start">
             <img
               data-aos="fade-left"
-              className=" md:max-w-[500px] md:block sm:hidden drop-shadow-md"
+              className=" md:max-w-[400px] md:block sm:hidden drop-shadow-md"
               src="/images/my-logo.png"
               alt=""
             />
             <p
               data-aos="fade-up"
               data-aos-duration="1500"
-              className="font-normal italic  md:text-3xl sm:text-xs"
+              className="font-normal italic  md:text-3xl sm:text-xs text-white"
             >
               I’m Randyson De Guia Baful, building digital spaces where ideas
               come alive.

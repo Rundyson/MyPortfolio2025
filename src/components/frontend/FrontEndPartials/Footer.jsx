@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer
       
-      className=" flex flex-col center-all transition-colors duration-500 bg-lightGray dark:bg-matteBlack text-black dark:text-white"
+      className=" flex flex-col center-all transition-colors duration-500 bg-lightGray dark:bg-matteBlack/20 text-black dark:text-white"
     >
       <ul className="socials flex md:gap-8 sm:gap-1 border-b md:pb-6 sm:pb-0 md:pt-3 sm:pt-0">
         <li className="tooltip" data-tooltip="Facebook">

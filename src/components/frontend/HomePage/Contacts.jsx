@@ -20,16 +20,16 @@ const Contacts = ({ id }) => {
   return (
     <section
       id={id}
-      className="py-12 bg-lightGray dark:bg-matteBlack text-black dark:text-white transition-colors duration-500"
+      className="py-12 container md:w-[1000px] bg-lightGray dark:bg-matteBlack/20  dark:text-white transition-colors duration-500"
     >
-      <h2 className="text-3xl font-bold text-center mb-8">Message Me</h2>
-      <div className="container mx-auto flex flex-col md:flex-row gap-8">
+      <h2 className="text-3xl font-bold text-center mb-8 text-white">Message Me</h2>
+      <div className="  flex flex-col md:flex-row gap-8">
         <div
-          className="md:w-1/2 bg-white dark:bg-gray-200/10 rounded-lg shadow-md p-6"
+          className="md:w-1/2 bg-white/20 dark:bg-gray-200/10 rounded-lg shadow-md p-6"
           data-aos="fade-right"
           data-aos-duration="1500"
         >
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 ">
             <input
               type="text"
               name="name"
@@ -37,7 +37,7 @@ const Contacts = ({ id }) => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="p-3 rounded border border-gray-300 dark:border-white bg-gray-100 dark:bg-gray-300/10 focus:outline-none focus:ring-2 focus:ring-white transition"
+              className="p-3 rounded border border-gray-300 dark:border-white bg-white/10 dark:bg-gray-300/10 focus:outline-none focus:ring-2 focus:ring-white transition"
             />
             <input
               type="email"
@@ -46,7 +46,7 @@ const Contacts = ({ id }) => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="p-3 rounded border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-300/10 focus:outline-none focus:ring-2 focus:ring-white transition"
+              className="p-3 rounded border border-gray-300 dark:border-gray-500 bg-white/10 dark:bg-gray-300/10 focus:outline-none focus:ring-2 focus:ring-white transition"
             />
             <textarea
               name="message"
@@ -55,11 +55,11 @@ const Contacts = ({ id }) => {
               onChange={handleChange}
               required
               rows={5}
-              className="p-3 rounded border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-300/10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
+              className="p-3 rounded border border-gray-300 dark:border-gray-500 bg-white/10 dark:bg-gray-300/10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
             />
             <button
               type="submit"
-              className="bg-gray-900 dark:bg-gray-500/40 text-white font-semibold p-3 rounded hover:bg-gray-700 dark:hover:bg-gray-300/40 transition"
+              className="bg-black/40 dark:bg-gray-500/40 text-white font-semibold p-3 rounded hover:bg-gray-700 dark:hover:bg-gray-300/40 transition"
             >
               Send Message
             </button>

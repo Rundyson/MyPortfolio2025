@@ -18,7 +18,7 @@ const SkillsCards = () => {
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="group relative w-64 h-20 overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-300/40 cursor-pointer
+          className="group relative w-64 h-20 overflow-hidden rounded-lg bg-white/20 dark:bg-matteBlack/40 cursor-pointer
                      transition-all duration-300 hover:h-40"
         >
           <div className="p-4">

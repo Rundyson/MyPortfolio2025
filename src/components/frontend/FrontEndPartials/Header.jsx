@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header
       data-aos="fade-down"
-      className="sticky top-0 w-full z-50 transition-all duration-300"
+      className="sticky top-0 w-full z-50 transition-all duration-300 "
     >
       <div
         className={`
@@ -25,12 +25,12 @@ const Header = () => {
           max-w-[1200px]
           ${
             isScrolled
-              ? 'h-16 rounded-xl bg-white/40 dark:bg-gray-400/40 shadow-md backdrop-blur-md'
+              ? 'h-16 rounded-xl bg-white/20 dark:bg-matteBlack/50 shadow-md backdrop-blur-md'
               : 'h-24'
           }
         `}
       >
-        {/* Logo */}
+   
         <div className="flex justify-center w-full sm:w-auto sm:justify-start">
           <img
             src="/images/my-logo.png"
@@ -39,7 +39,6 @@ const Header = () => {
           />
         </div>
 
-        {/* Right side */}
         <div className="ml-auto flex items-center gap-4">
           <ThemeToggle />
           <NavBar />

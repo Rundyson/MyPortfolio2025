@@ -2,15 +2,20 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './components/frontend/HomePage/HomePage'
 import ProjectsSection from './components/frontend/HomePage/ProjectSection'
+import BackgroundVideo from './components/hooks/BackgroundVideo'
 
 const App = () => {
   return (
+
     <Router>
+      <BackgroundVideo />
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="projects" element={<ProjectsSection />} />
       </Routes>
     </Router>
+  
+    
   )
 }
 

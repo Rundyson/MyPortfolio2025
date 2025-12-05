@@ -57,7 +57,7 @@
 
 /* Call button */
 .btn-call {
-  @apply bg-matteBlack text-white border-black hover:bg-transparent hover:text-black dark:bg-white dark:text-black dark:border-white dark:hover:text-black animate-pulse transition-colors;
+  @apply bg-white/40 text-white border-white hover:bg-transparent  dark:bg-matteBlack/20 dark:text-white dark:border-matteBlack animate-pulse transition-colors;
 }
 
 

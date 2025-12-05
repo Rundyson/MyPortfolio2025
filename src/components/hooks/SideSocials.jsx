@@ -59,7 +59,7 @@ const SideSocials = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="group flex items-center w-12 hover:w-[280px] transition-all duration-300 overflow-hidden mb-2 rounded-r-md
-                     bg-lightGray dark:bg-matteBlack text-black dark:text-white hover:bg-gray-300/40 dark:hover:bg-matteBlack/70"
+                     bg-lightGray dark:bg-matteBlack/20 text-black dark:text-white hover:bg-gray-300/40 dark:hover:bg-matteBlack/70"
         >
           <img
             src={social.icon}
