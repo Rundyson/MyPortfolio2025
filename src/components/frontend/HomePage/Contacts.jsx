@@ -20,13 +20,13 @@ const Contacts = ({ id }) => {
   return (
     <section
       id={id}
-      className="py-12 bg-lightGray dark:bg-matteBlack/20 dark:text-white transition-colors duration-500"
+      className="py-12 bg-lightGray dark:bg-matteBlack/20 dark:text-white transition-colors duration-500 overflow-x-hidden"
     >
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         Message Me
       </h2>
 
-      <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6 md:gap-8 overflow-hidden">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6 md:gap-8">
         {/* Form */}
         <div
           className="md:w-1/2 bg-white/20 dark:bg-gray-200/10 rounded-lg shadow-md p-6"
@@ -70,17 +70,16 @@ const Contacts = ({ id }) => {
           </form>
         </div>
 
-        {/* Map */}
         <div
           className="md:w-1/2 rounded-lg overflow-hidden shadow-md"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <div className="w-full h-64 md:h-full">
+          <div className="w-full h-[320px] md:h-[450px] flex-shrink-0">
             <iframe
               title="Location Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.066374496284!2d121.03089031531235!3d14.579639889764337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b92b2f0fdb03%3A0x6b2b63f2f5f2d29a!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
-              className="w-full h-full border-0"
+              className="w-full h-full border-0 block"
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
