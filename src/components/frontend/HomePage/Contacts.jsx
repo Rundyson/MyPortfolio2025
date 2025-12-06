@@ -72,17 +72,17 @@ const Contacts = ({ id }) => {
 
         {/* Map */}
         <div
-          className="md:w-1/2 rounded-lg overflow-hidden shadow-md min-h-[300px]"
+          className="md:w-1/2 rounded-lg overflow-hidden shadow-md"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <div className="w-full h-full relative">
+          <div className="w-full h-64 md:h-full">
             <iframe
               title="Location Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.066374496284!2d121.03089031531235!3d14.579639889764337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b92b2f0fdb03%3A0x6b2b63f2f5f2d29a!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
-              className="absolute inset-0 w-full h-full border-0"
-              allowFullScreen
+              className="w-full h-full border-0"
               loading="lazy"
+              allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
