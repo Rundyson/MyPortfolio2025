@@ -3,7 +3,6 @@ import ProjectCard from './ProjectCard'
 import FigmaCard from './FigmaCard'
 import { figma, projects } from '../../hooks/projectsList'
 import Header from '../FrontEndPartials/Header'
-import ThemeToggle from '../../hooks/ThemeToggle'
 import { Link } from 'react-router-dom'
 import Footer from '../FrontEndPartials/Footer'
 import SideSocials from '../../hooks/SideSocials'
@@ -41,10 +40,6 @@ const ProjectsSection = () => {
         </div>
 
         
-        <div className="ml-auto flex items-center gap-4">
-          <ThemeToggle />
-        
-        </div>
       </div>
     </header>
 
