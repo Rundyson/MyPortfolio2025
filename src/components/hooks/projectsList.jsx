@@ -5,7 +5,7 @@ export const projects = [
     description:
       'Recreated the Netflix homepage to practice component-based design, dekstop layout only, and Tailwind CSS styling.',
     tech: ['Tailwind', 'React', 'Vite'],
-    demoLink: 'https://netflix-rho-rose.vercel.app/',
+    demoLink: 'https://netflix-d2na.vercel.app/',
     repoLink: 'https://github.com/Rundyson/viter-netplex.git',
     image: '/images/p11.png',
   },
